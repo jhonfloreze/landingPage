@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <meta name="description" content="conR es el bot de WhatsApp que automatiza pedidos de pickup y delivery para restaurantes en México. Sin comisiones por pedido, con catálogo interactivo y pagos con Mercado Pago. Agenda tu demo gratis.">
+  <meta name="keywords" content="bot WhatsApp restaurante, automatizar pedidos WhatsApp, sistema pedidos restaurante México, chatbot delivery, pedidos pickup WhatsApp, Mercado Pago restaurante">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://conr.mx/">
+  <title>conR | Bot de WhatsApp para Pedidos de Restaurante - Pickup y Delivery sin Comisiones</title>
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="conR - Automatiza Pedidos por WhatsApp para tu Restaurante">
+  <meta property="og:description" content="Bot de WhatsApp que toma pedidos de pickup y delivery automáticamente. Sin apps extra, sin comisiones abusivas. Catálogo interactivo y pagos con Mercado Pago.">
+  <meta property="og:url" content="https://conr.mx/">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="conR">
+  <meta property="og:image" content="https://conr.mx/screenshots/desktop-hero.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="conR - Bot de WhatsApp para automatizar pedidos de restaurante con catálogo interactivo">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="conR - Bot de WhatsApp para Pedidos de Restaurante">
+  <meta name="twitter:description" content="Automatiza pedidos de pickup y delivery directo en WhatsApp. Sin comisiones por pedido, respuestas 24/7 y pagos con Mercado Pago.">
+  <meta name="twitter:image" content="https://conr.mx/screenshots/desktop-hero.png">
+  <meta name="twitter:image:alt" content="conR - Bot de WhatsApp para automatizar pedidos de restaurante">
+
+  <!-- Additional SEO -->
+  <meta name="author" content="conR">
+  <meta name="theme-color" content="#1B5E3C">
+  <link rel="alternate" hreflang="es-MX" href="https://conr.mx/">
+  <link rel="alternate" hreflang="x-default" href="https://conr.mx/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "conR",
+    "url": "https://conr.mx",
+    "logo": "https://conr.mx/images/logo.jpg",
+    "description": "Bot de WhatsApp que automatiza pedidos de pickup y delivery para restaurantes en México.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+52-1-998-238-1667",
+      "contactType": "sales",
+      "availableLanguage": "Spanish"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "México"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: Software Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "conR - Bot de Pedidos por WhatsApp",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Bot de WhatsApp que automatiza pedidos de pickup y delivery para restaurantes en México. Catálogo interactivo, confirmación automática y pagos con Mercado Pago.",
+    "url": "https://conr.mx",
+    "screenshot": "https://conr.mx/screenshots/desktop-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "299",
+      "priceCurrency": "MXN",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "299",
+        "priceCurrency": "MXN",
+        "billingDuration": "P1M"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "3"
+    }
+  }
+  </script>
+
+  <!-- Structured Data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo toma configurar conR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entre 3 y 7 días hábiles. Nosotros configuramos tu menú, horarios y preferencias. Solo necesitas enviarnos la información y acceso a tu WhatsApp Business."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito WhatsApp Business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, es requisito. WhatsApp Business es gratuito y te permite tener catálogo, horarios y respuestas automáticas. Si aún no lo tienes, te ayudamos a configurarlo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es obligatorio usar Mercado Pago?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, es completamente opcional. Puedes usar conR solo para tomar pedidos y cobrar en efectivo o terminal al entregar. Mercado Pago es una funcionalidad adicional si quieres ofrecer pago anticipado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si un cliente tiene una pregunta especial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El bot detecta cuando necesita intervención humana y te notifica. Puedes tomar la conversación en cualquier momento. También configuramos respuestas para preguntas frecuentes de tu negocio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta conR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tenemos planes desde $299 MXN/mes. El precio depende del volumen de pedidos y funcionalidades que necesites. En la demo te damos una cotización exacta para tu caso."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Sticky Header -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="#" class="header__logo" aria-label="conR - Inicio">
+        <img src="images/logo.jpg" alt="conR logo" class="header__logo-img">
+        <span class="header__logo-text">conR</span>
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Navegación principal">
+        <button class="header__menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+          <span class="header__menu-bar"></span>
+          <span class="header__menu-bar"></span>
+          <span class="header__menu-bar"></span>
+        </button>
+        <ul id="main-nav" class="header__nav-list">
+          <li><a href="#como-funciona" class="header__nav-link">Cómo funciona</a></li>
+          <li><a href="#beneficios" class="header__nav-link">Beneficios</a></li>
+          <li><a href="#faq" class="header__nav-link">Preguntas</a></li>
+        </ul>
+      </nav>
+
+      <a href="#agendar" class="btn btn--primary header__cta" data-track="header_cta">
+        Agendar demo
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="parallax-bg" aria-hidden="true">
+        <div class="parallax-layer parallax-layer--1"></div>
+        <div class="parallax-layer parallax-layer--2"></div>
+        <div class="parallax-layer parallax-layer--3"></div>
+      </div>
+
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 id="hero-heading" class="hero__title">
+            Tus clientes piden,<br>
+            <span class="hero__title-accent">WhatsApp entrega</span>
+          </h1>
+          <p class="hero__subtitle">
+            El bot de WhatsApp que automatiza pedidos de pickup y delivery para tu restaurante.
+            Sin apps extras, sin comisiones por pedido. Tu cliente escribe, conR confirma al instante.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="#agendar" class="btn btn--primary btn--large" data-track="hero_cta_primary">
+              <span>Agendar demo</span>
+              <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5219982381667?text=Hola%2C%20me%20interesa%20conR%20para%20mi%20restaurante" class="btn btn--whatsapp" target="_blank" rel="noopener" data-track="hero_cta_whatsapp">
+              <svg class="btn__icon btn__icon--left" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span>Escríbenos por WhatsApp</span>
+            </a>
+          </div>
+
+          <p class="hero__demo-note">
+            Demo de 15 min gratis. Analizamos tu operación actual y te mostramos cómo automatizar tus pedidos.
+          </p>
+        </div>
+
+        <div class="hero__visual">
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <div class="chat-demo">
+                  <div class="chat-demo__header">
+                    <div class="chat-demo__avatar">🍕</div>
+                    <span class="chat-demo__name">Tu Restaurante</span>
+                  </div>
+                  <div class="chat-demo__messages">
+                    <div class="chat-msg chat-msg--incoming">
+                      <p>Hola, quiero ordenar una pizza</p>
+                    </div>
+                    <div class="chat-msg chat-msg--outgoing">
+                      <p>¡Hola! 👋 Aquí está nuestro menú:</p>
+                    </div>
+                    <div class="chat-msg chat-msg--outgoing chat-msg--menu">
+                      <div class="menu-card">
+                        <div class="menu-card__img">🍕</div>
+                        <div class="menu-card__info">
+                          <span class="menu-card__name">Pizza Margherita</span>
+                          <span class="menu-card__price">$189</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-msg chat-msg--incoming">
+                      <p>Esa, para recoger a las 7pm</p>
+                    </div>
+                    <div class="chat-msg chat-msg--outgoing chat-msg--confirm">
+                      <p>✅ <strong>Pedido confirmado</strong></p>
+                      <p>Pizza Margherita • $189</p>
+                      <p>Pickup: 7:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem → Solution -->
+    <section class="problems" aria-labelledby="problems-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">El problema</span>
+          <h2 id="problems-heading" class="section-title">
+            Problemas comunes al tomar pedidos por WhatsApp
+          </h2>
+        </header>
+
+        <div class="problems__grid">
+          <article class="problem-card">
+            <div class="problem-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                <line x1="1" y1="1" x2="23" y2="23" stroke="var(--color-danger)"/>
+              </svg>
+            </div>
+            <h3 class="problem-card__title">Pedidos perdidos por mensajes sin contestar</h3>
+            <p class="problem-card__desc">
+              En horas pico, los mensajes de WhatsApp se acumulan. Clientes frustrados abandonan y piden a la competencia.
+            </p>
+          </article>
+
+          <article class="problem-card">
+            <div class="problem-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+                <line x1="4" y1="4" x2="20" y2="20" stroke="var(--color-danger)"/>
+              </svg>
+            </div>
+            <h3 class="problem-card__title">Confirmaciones manuales que generan errores</h3>
+            <p class="problem-card__desc">
+              Copiar y pegar pedidos, calcular totales a mano, confirmar horarios de entrega... es lento, agotador y propenso a equivocaciones.
+            </p>
+          </article>
+
+          <article class="problem-card">
+            <div class="problem-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+                <path d="M6 8h.01M6 12h.01" stroke="var(--color-danger)" stroke-width="3"/>
+              </svg>
+            </div>
+            <h3 class="problem-card__title">Apps de delivery caras y complicadas</h3>
+            <p class="problem-card__desc">
+              Las plataformas de delivery cobran hasta 30% de comisión por pedido. Tus clientes ya usan WhatsApp a diario, no necesitan descargar otra app.
+            </p>
+          </article>
+        </div>
+
+        <div class="solution-bridge">
+          <div class="solution-bridge__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <polyline points="19 12 12 19 5 12"/>
+            </svg>
+          </div>
+          <div class="solution-bridge__content">
+            <h3 class="solution-bridge__title">
+              conR: el chatbot que automatiza pedidos de tu restaurante
+            </h3>
+            <p class="solution-bridge__desc">
+              Respuestas instantáneas 24/7, catálogo interactivo en WhatsApp, confirmación automática de pedidos y cobro integrado con Mercado Pago.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="como-funciona" class="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Cómo funciona</span>
+          <h2 id="how-heading" class="section-title">
+            Cómo funciona el bot de pedidos en 3 pasos
+          </h2>
+        </header>
+
+        <div class="steps-showcase">
+          <!-- Step 1: Catalog -->
+          <article class="step-showcase">
+            <div class="step-showcase__content">
+              <div class="step-showcase__number">01</div>
+              <h3 class="step-showcase__title">Tu cliente explora el menú en WhatsApp</h3>
+              <p class="step-showcase__desc">
+                El cliente escribe a tu número de WhatsApp Business y el bot le muestra tu catálogo completo con fotos y precios actualizados. Selecciona productos con un tap, sin salir de la conversación.
+              </p>
+              <ul class="step-showcase__features">
+                <li>Catálogo visual con fotos</li>
+                <li>Precios actualizados al instante</li>
+                <li>Respuesta automática 24/7</li>
+              </ul>
+            </div>
+            <div class="step-showcase__visual">
+              <div class="phone-frame">
+                <img src="images/step-1-catalog.png" alt="Catálogo de productos en WhatsApp mostrando helado, pizza, ribeye y ensaladas con precios" loading="lazy" class="phone-frame__screen">
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 2: Order -->
+          <article class="step-showcase step-showcase--reverse">
+            <div class="step-showcase__content">
+              <div class="step-showcase__number">02</div>
+              <h3 class="step-showcase__title">Confirmación automática del pedido y dirección de entrega</h3>
+              <p class="step-showcase__desc">
+                El chatbot confirma el pedido con un resumen detallado, calcula el total automáticamente y solicita la dirección para delivery. El cliente comparte su ubicación con un tap.
+              </p>
+              <ul class="step-showcase__features">
+                <li>Confirmación automática con resumen</li>
+                <li>Solicitud de ubicación integrada</li>
+                <li>Pickup o delivery, tú decides</li>
+              </ul>
+            </div>
+            <div class="step-showcase__visual">
+              <div class="phone-frame">
+                <img src="images/step-2-order.png" alt="Confirmación de pedido en WhatsApp mostrando pizza ordenada, total y solicitud de ubicación para entrega" loading="lazy" class="phone-frame__screen">
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 3: Payment -->
+          <article class="step-showcase">
+            <div class="step-showcase__content">
+              <div class="step-showcase__number">03</div>
+              <h3 class="step-showcase__title">Selección de horario y pago con Mercado Pago</h3>
+              <p class="step-showcase__desc">
+                El cliente elige el horario de recolección o entrega disponible. Si activas la integración con Mercado Pago, puede pagar en línea directo desde el chat con un solo botón.
+              </p>
+              <ul class="step-showcase__features">
+                <li>Selección de horario disponible</li>
+                <li>Pago con Mercado Pago (opcional)</li>
+                <li>Notificación al restaurante</li>
+              </ul>
+            </div>
+            <div class="step-showcase__visual">
+              <div class="phone-frame">
+                <img src="images/step-3-payment.png" alt="Selección de horario de recolección y botón de pago con Mercado Pago en WhatsApp" loading="lazy" class="phone-frame__screen">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="beneficios" class="benefits" aria-labelledby="benefits-heading">
+      <div class="parallax-bg parallax-bg--benefits" aria-hidden="true">
+        <div class="parallax-layer parallax-layer--4"></div>
+      </div>
+
+      <div class="container">
+        <header class="section-header section-header--light">
+          <span class="section-label">Beneficios</span>
+          <h2 id="benefits-heading" class="section-title">
+            Beneficios de automatizar pedidos por WhatsApp
+          </h2>
+        </header>
+
+        <div class="benefits__grid">
+          <article class="benefit-card">
+            <div class="benefit-card__icon">⚡</div>
+            <h3 class="benefit-card__title">Respuestas automáticas en segundos</h3>
+            <p class="benefit-card__desc">
+              El bot de WhatsApp contesta al instante, las 24 horas del día, los 7 días de la semana. Nunca pierdes un pedido por tardarte en responder.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">🎯</div>
+            <h3 class="benefit-card__title">Cero errores en pedidos</h3>
+            <p class="benefit-card__desc">
+              El cliente selecciona directamente del catálogo digital. Sin malentendidos ni pedidos incorrectos por mensajes de texto.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">📈</div>
+            <h3 class="benefit-card__title">Mayor tasa de conversión de pedidos</h3>
+            <p class="benefit-card__desc">
+              Un proceso de compra simple y rápido significa que más clientes completan su pedido sin abandonar la conversación.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">📱</div>
+            <h3 class="benefit-card__title">Funciona con tu WhatsApp Business actual</h3>
+            <p class="benefit-card__desc">
+              Se integra con tu número de WhatsApp Business existente. Tus clientes siguen escribiendo al mismo número de siempre.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">💰</div>
+            <h3 class="benefit-card__title">Sin comisiones por pedido</h3>
+            <p class="benefit-card__desc">
+              Tarifa fija mensual sin sorpresas. A diferencia de las apps de delivery, no te cobramos un porcentaje por cada venta.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">🔧</div>
+            <h3 class="benefit-card__title">Configuración rápida y sin esfuerzo</h3>
+            <p class="benefit-card__desc">
+              Nuestro equipo configura el bot con tu menú, horarios y opciones de entrega. En menos de una semana estás recibiendo pedidos automatizados.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof" aria-labelledby="proof-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Testimonios</span>
+          <h2 id="proof-heading" class="section-title">
+            Restaurantes en México que ya automatizan sus pedidos
+          </h2>
+        </header>
+
+        <div class="testimonials">
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">
+              "Antes perdíamos pedidos en horas pico porque no dábamos abasto contestando. Ahora el bot maneja todo y solo nos enfocamos en cocinar."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar">MR</div>
+              <div class="testimonial__info">
+                <cite class="testimonial__name">María Rodríguez</cite>
+                <span class="testimonial__role">Tacos El Patrón, CDMX</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">
+              "Lo mejor es que mis clientes regulares ni se dieron cuenta del cambio. Siguen escribiendo al mismo número, pero ahora es más rápido."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar">CG</div>
+              <div class="testimonial__info">
+                <cite class="testimonial__name">Carlos García</cite>
+                <span class="testimonial__role">Pizzería Napoli, Guadalajara</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial__quote">
+              "Activamos Mercado Pago y el 60% de los clientes paga antes de recoger. Menos filas, menos efectivo, todo más ordenado."
+            </p>
+            <footer class="testimonial__author">
+              <div class="testimonial__avatar">LP</div>
+              <div class="testimonial__info">
+                <cite class="testimonial__name">Laura Pérez</cite>
+                <span class="testimonial__role">Café Jardín, Monterrey</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+
+        <div class="trusted-by">
+          <p class="trusted-by__label">Confiado por restaurantes en:</p>
+          <div class="trusted-by__logos">
+            <span class="trusted-by__city">CDMX</span>
+            <span class="trusted-by__city">Guadalajara</span>
+            <span class="trusted-by__city">Monterrey</span>
+            <span class="trusted-by__city">Cancún</span>
+            <span class="trusted-by__city">Puebla</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Preguntas frecuentes</span>
+          <h2 id="faq-heading" class="section-title">
+            Preguntas frecuentes sobre el bot de pedidos por WhatsApp
+          </h2>
+        </header>
+
+        <div class="faq__list" role="list">
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span>¿Cuánto tiempo toma configurar conR?</span>
+              <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Entre 3 y 7 días hábiles. Nosotros configuramos tu menú, horarios y preferencias. Solo necesitas enviarnos la información y acceso a tu WhatsApp Business.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span>¿Necesito WhatsApp Business?</span>
+              <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Sí, es requisito. WhatsApp Business es gratuito y te permite tener catálogo, horarios y respuestas automáticas. Si aún no lo tienes, te ayudamos a configurarlo.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span>¿Es obligatorio usar Mercado Pago?</span>
+              <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>No, es completamente opcional. Puedes usar conR solo para tomar pedidos y cobrar en efectivo o terminal al entregar. Mercado Pago es una funcionalidad adicional si quieres ofrecer pago anticipado.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span>¿Qué pasa si un cliente tiene una pregunta especial?</span>
+              <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>El bot detecta cuando necesita intervención humana y te notifica. Puedes tomar la conversación en cualquier momento. También configuramos respuestas para preguntas frecuentes de tu negocio.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span>¿Tienen soporte si algo falla?</span>
+              <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Sí, tenemos soporte por WhatsApp de lunes a sábado. Para urgencias fuera de horario, respondemos en menos de 2 horas. Tu operación no se detiene.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              <span>¿Cuánto cuesta conR?</span>
+              <svg class="faq-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Tenemos planes desde $299 MXN/mes. El precio depende del volumen de pedidos y funcionalidades que necesites. En la demo te damos una cotización exacta para tu caso.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + Lead Form -->
+    <section id="agendar" class="cta-section" aria-labelledby="cta-heading">
+      <div class="parallax-bg parallax-bg--cta" aria-hidden="true">
+        <div class="parallax-layer parallax-layer--5"></div>
+      </div>
+
+      <div class="container">
+        <div class="cta-section__content">
+          <header class="section-header section-header--light">
+            <span class="section-label">Da el siguiente paso</span>
+            <h2 id="cta-heading" class="section-title">
+              Empieza a automatizar los pedidos de tu restaurante hoy
+            </h2>
+            <p class="section-subtitle">
+              Agenda una demo gratuita de 15 minutos. Te mostramos cómo conR funcionaría con el menú real de tu negocio.
+            </p>
+          </header>
+
+          <div class="lead-form-container">
+            <form id="lead-form" class="lead-form" novalidate>
+              <!-- Honeypot - hidden from humans, catches bots -->
+              <div class="form-hp" aria-hidden="true" tabindex="-1">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" autocomplete="off" tabindex="-1">
+              </div>
+
+              <!-- Step 1 -->
+              <div class="lead-form__step lead-form__step--active" data-step="1">
+                <div class="lead-form__step-header">
+                  <span class="lead-form__step-indicator">Paso 1 de 2</span>
+                  <h3 class="lead-form__step-title">¿Cómo te contactamos?</h3>
+                </div>
+
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Nombre completo *</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    class="form-input"
+                    placeholder="Ej: María García López"
+                    required
+                    autocomplete="name"
+                  >
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="whatsapp" class="form-label">WhatsApp *</label>
+                  <div class="form-input-group">
+                    <span class="form-input-prefix">+52</span>
+                    <input
+                      type="tel"
+                      id="whatsapp"
+                      name="whatsapp"
+                      class="form-input form-input--tel"
+                      placeholder="55 1234 5678"
+                      required
+                      autocomplete="tel"
+                      pattern="[0-9\s]{10,}"
+                    >
+                  </div>
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+
+                <button type="button" class="btn btn--primary btn--full lead-form__next" data-track="form_step1_next">
+                  Continuar
+                  <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="lead-form__step" data-step="2">
+                <div class="lead-form__step-header">
+                  <button type="button" class="lead-form__back" aria-label="Volver al paso anterior">
+                    <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                    </svg>
+                  </button>
+                  <span class="lead-form__step-indicator">Paso 2 de 2</span>
+                  <h3 class="lead-form__step-title">Cuéntanos de tu negocio</h3>
+                </div>
+
+                <div class="form-group">
+                  <label for="businessName" class="form-label">Nombre del restaurante *</label>
+                  <input
+                    type="text"
+                    id="businessName"
+                    name="businessName"
+                    class="form-input"
+                    placeholder="Ej: Tacos El Patrón"
+                    required
+                  >
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="city" class="form-label">Ciudad *</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    class="form-input"
+                    placeholder="Ej: Ciudad de México"
+                    required
+                    autocomplete="address-level2"
+                  >
+                  <span class="form-error" aria-live="polite"></span>
+                </div>
+
+                <fieldset class="form-group">
+                  <legend class="form-label">¿Qué tipo de servicio ofreces? *</legend>
+                  <div class="form-options">
+                    <label class="form-option">
+                      <input type="radio" name="fulfillment" value="pickup" required>
+                      <span class="form-option__box">
+                        <span class="form-option__icon">🏪</span>
+                        <span class="form-option__text">Solo pickup</span>
+                      </span>
+                    </label>
+                    <label class="form-option">
+                      <input type="radio" name="fulfillment" value="delivery">
+                      <span class="form-option__box">
+                        <span class="form-option__icon">🛵</span>
+                        <span class="form-option__text">Solo delivery</span>
+                      </span>
+                    </label>
+                    <label class="form-option">
+                      <input type="radio" name="fulfillment" value="both">
+                      <span class="form-option__box">
+                        <span class="form-option__icon">✨</span>
+                        <span class="form-option__text">Ambos</span>
+                      </span>
+                    </label>
+                  </div>
+                  <span class="form-error" aria-live="polite"></span>
+                </fieldset>
+
+                <fieldset class="form-group">
+                  <legend class="form-label">¿Te interesa cobrar con Mercado Pago?</legend>
+                  <div class="form-options form-options--inline">
+                    <label class="form-option form-option--small">
+                      <input type="radio" name="mercadoPago" value="yes">
+                      <span class="form-option__box">Sí</span>
+                    </label>
+                    <label class="form-option form-option--small">
+                      <input type="radio" name="mercadoPago" value="no">
+                      <span class="form-option__box">No</span>
+                    </label>
+                    <label class="form-option form-option--small">
+                      <input type="radio" name="mercadoPago" value="maybe" checked>
+                      <span class="form-option__box">Tal vez</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="form-group">
+                  <label for="notes" class="form-label">¿Algo más que debamos saber? (opcional)</label>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    class="form-input form-input--textarea"
+                    placeholder="Ej: Tenemos 2 sucursales, hacemos muchos pedidos corporativos..."
+                    rows="3"
+                  ></textarea>
+                </div>
+
+                <!-- Cloudflare Turnstile CAPTCHA -->
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACY-rHzbFN-FTF56" data-theme="light" data-language="es"></div>
+
+                <button type="submit" class="btn btn--primary btn--full btn--large" data-track="form_submit">
+                  Agendar demo
+                  <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Success State -->
+              <div class="lead-form__success" hidden>
+                <div class="lead-form__success-icon">✓</div>
+                <h3 class="lead-form__success-title">¡Listo! Te contactamos pronto</h3>
+                <p class="lead-form__success-text">
+                  Revisa tu WhatsApp. En menos de 24 horas te escribimos para agendar tu demo.
+                </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="cta-section__alt">
+            <p class="cta-section__alt-text">¿Prefieres escribirnos directamente?</p>
+            <a href="https://wa.me/5219982381667?text=Hola%2C%20me%20interesa%20conR%20para%20mi%20restaurante" class="btn btn--whatsapp" target="_blank" rel="noopener" data-track="cta_whatsapp">
+              <svg class="btn__icon btn__icon--left" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span>Escríbenos por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <a href="#" class="footer__logo" aria-label="conR - Inicio">
+            <img src="images/logo.jpg" alt="conR logo" class="footer__logo-img">
+            <span>conR</span>
+          </a>
+          <p class="footer__tagline">Bot de WhatsApp para automatizar pedidos de pickup y delivery en restaurantes de México.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Enlaces del pie de página">
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Producto</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#como-funciona">Cómo funciona</a></li>
+              <li><a href="#beneficios">Beneficios</a></li>
+              <li><a href="#faq">Preguntas frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-group">
+            <h4 class="footer__nav-title">Contacto</h4>
+            <ul class="footer__nav-list">
+              <li><a href="#agendar">Agendar demo</a></li>
+              <li><a href="https://wa.me/5219982381667" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="mailto:hola@pedidobot.mx">hola@pedidobot.mx</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 conR. Todos los derechos reservados.</p>
+        <div class="footer__legal">
+          <a href="#">Aviso de privacidad</a>
+          <a href="#">Términos de servicio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
