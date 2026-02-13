@@ -1,5 +1,5 @@
 /**
- * conR Landing Page - Main JavaScript
+ * Pídelo por Chat Landing Page - Main JavaScript
  * Handles: Parallax, mobile menu, form validation, scroll animations, and analytics tracking
  */
 
@@ -15,7 +15,7 @@
     headerScrollThreshold: 50,
     intersectionThreshold: 0.1,
     whatsappNumber: '5219982381667', // Replace with actual number
-    whatsappMessage: 'Hola, me interesa conR para mi restaurante',
+    whatsappMessage: 'Hola, me interesa Pídelo por Chat para mi restaurante',
     supabaseUrl: 'https://dzcfhvqevjxewdvajeco.supabase.co',
     supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6Y2ZodnFldmp4ZXdkdmFqZWNvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjczNzI2NjIsImV4cCI6MjA4Mjk0ODY2Mn0.ifqeps_1euVbK8m2GGoypEWLGYCn40TNsmDKeHoFPJc',
     formMinTimeSeconds: 3, // Minimum seconds before a submission is valid (anti-bot)
@@ -47,7 +47,7 @@
     formBackBtn: document.querySelector('.lead-form__back'),
     formSuccess: document.querySelector('.lead-form__success'),
     faqItems: document.querySelectorAll('.faq-item'),
-    animatedElements: document.querySelectorAll('.problem-card, .step, .benefit-card, .testimonial')
+    animatedElements: document.querySelectorAll('.problem-card, .step-showcase, .benefit-card, .testimonial, .dashboard-feature')
   };
 
   // ==========================================================================
@@ -621,7 +621,7 @@
       page_location: window.location.href
     });
 
-    console.log('conR Landing initialized');
+    console.log('Pídelo por Chat Landing initialized');
   }
 
   // Run on DOM ready
